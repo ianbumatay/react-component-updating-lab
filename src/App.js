@@ -38,13 +38,7 @@ class App extends Component {
   // adds a random number for timer ID
   handleAddTimer = () => {
     this.setState(prevState => ({
-      timerIDs: [
-        ...prevState.timerIDs,
-        {
-          updateInterval: prevState.updateInterval,
-          id: Date.now()
-        }
-      ]
+      timerIDs: [ ...prevState.timerIDs, {updateInterval: prevState.updateInterval, id: Date.now()} ]
     }))
   }
 
